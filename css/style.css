@@ -1,0 +1,69 @@
+.btns{
+    width:60px;
+    height:60px;
+    margin: 6px;
+    border-radius: 50px;
+   border: 4px solid rgba(176, 174, 174, 0.281);
+    color: white;
+    background-color: black;
+    font-size: large;
+    
+}
+.history{
+    width: 306.8px;
+    height: 360px;
+    background-image: url("D:/js/Calc/img/bg.jpg");
+
+}
+
+.inputbox{
+    text-align: right;
+    width: 282px;
+    height: 70px;
+    font-size: 40px;
+    border-top: 0ch;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: "Digital-7Mono" ;
+    background-color: black;
+    color: white;
+    border: 5px;
+    font-family: Digital-7Mono;
+}
+
+.inputbox2{
+    padding-right:  10px; 
+    padding-top: 4px;
+    border: 5px ;
+    text-align: right;
+    width: 274px;
+    height: 20px;
+    font-size: 20px;
+   margin: 0px;
+   border-bottom: 0ch;
+   margin-left: 7px;
+   margin-top: 4px;
+    color: rgb(252, 252, 252);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: black;
+    
+}
+.calci{
+    border: 2px solid black;
+    width: 306.8px;
+    height: 460px;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    background-image: url("D:/js/Calc/img/bg.jpg");
+    padding: 10px;
+    
+}
+body{
+    margin-top: 15%;
+
+}
