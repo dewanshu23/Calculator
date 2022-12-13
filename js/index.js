@@ -19,7 +19,13 @@ function ans()
    B.value=A.value;
    A.value=eval(A.value);
 }
-function history()
+function showHistory()
 {
+    currentvalue = document.querySelector('.history').value;
+  if(currentvalue == "Off"){
+    document.querySelector('.history').style.display='none'
+  }else{
+    document.querySelector('.history').style.display='block'
+  }
     
 }
