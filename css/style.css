@@ -11,8 +11,8 @@
 }
 .history{
     width: 306.8px;
-    height: px;
-    background-image: url("D:/js/Calc/img/bg.jpg");
+    height: auto;
+    background-image: url("../img/bg.jpg");
     border-radius: 15px;
     border: solid black 2px;
 
@@ -62,7 +62,7 @@
     align-items: center;
     align-content: center;
     margin: auto;
-    background-image: url("D:/js/Calc/img/bg.jpg");
+    background-image: url("../img/bg.jpg");
     padding: 10px;
     
     
