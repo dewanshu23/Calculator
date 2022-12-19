@@ -61,5 +61,7 @@ function showHistory()
 function clearHistory()
 {
   history=document.querySelector('.history').innerText='';
+  answers=[];
+  equations=[];
 }
 console.log(equations);
