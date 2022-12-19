@@ -1,26 +1,30 @@
 var answers=[];
 var equations=[];
 var count=0;
-var A=document.querySelector('.inputbox');
-var B=document.querySelector('.inputbox2');
+var answer=document.querySelector('.inputbox');
+var equation=document.querySelector('.inputbox2');
 function getNum(val)
 {
-    if(A.value==0)
-    A.value=val;
+    if(answer.value==0)
+    answer.value=val;
     else
-    A.value+=val;
+    answer.value+=val;
 }
 
 function Reset()
 {
-    A.value=0;
-    B.value='';
+    answer.value=0;
+    equation.value='';
     
 }
 function ans()
 {
-   B.value=A.value+"=";
-   A.value=eval(A.value);
+   equation.value=answer.value+"=";
+   equations.push(equation.value);
+   console.log(equations);
+   answer.value=eval(answer.value);
+   answers.push(answer.value);
+   console.log(answers);
 }
 function showHistory()
 {
@@ -40,12 +44,22 @@ function showHistory()
     keys.style.visibility='visible';
 
     }
+    history.innerHTML = ' <button><i class="fa-solid fa-trash" onclick="clearHistory()"></i></button>';
+
+    for(let i=0; i<answers.length;i++)//(0<3)(1<3)(2<3)(3<3)
+    {
+        history.innerHTML += '<div class="section"><h6>'+ equations[i]+ ' </h6><h6>'+answers[i]+'</h6></div>';
+    }
+}
+
+    
 
   
   
   
-}
+
 function clearHistory()
 {
-  history=document.querySelector('.history p').innerText='';
+  history=document.querySelector('.history').innerText='';
 }
+console.log(equations);

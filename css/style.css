@@ -30,6 +30,8 @@
     visibility: hidden;
     border-top: 2px white;
     position: absolute;
+    text-align: right;
+    font-size: 25px;
 }
 .input{
     border: 5px silver;
