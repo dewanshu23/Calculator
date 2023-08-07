@@ -21,11 +21,9 @@ function ans()
 {
    equation.value=answer.value+"=";
    equations.push(equation.value);
-   console.log(equations);
    answer.value=eval(answer.value);
    answers.push(answer.value);
-   console.log(answers);
-}
+  }
 function showHistory()
 {
   
@@ -52,7 +50,14 @@ function showHistory()
     }
 }
 
-    
+function backSpace()
+{
+    let ans=answer.value/10;
+    if(ans!=0)
+      answer.value=Math.trunc(ans);
+    else
+      answer.value=0
+}
 
   
   
